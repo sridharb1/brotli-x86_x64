@@ -14,5 +14,5 @@ run-times.
   * git clone [brotli, tested w/ v1.0.7+](https://github.com/google/brotli)
   * git clone [brotli-x86_x64](https://github.com/sridharb1/brotli-x86_x64)
     to another folder
-  * Copy the contents of this folder to a folder called build_folder in
-    the brotli folder.
+  * Copy the contents of the folder named build_folder to the root
+    folder of the brotli source tree.
