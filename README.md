@@ -11,7 +11,7 @@ run-times.
 
 # Installation #
 
-  * git clone [brotli, tested w/ v1.0.7+](https://github.com/google/brotli)
+  * git clone [brotli, tested w/ v1.0.9](https://github.com/google/brotli)
   * git clone [brotli-x86_x64](https://github.com/sridharb1/brotli-x86_x64)
     to another folder
   * Copy the contents of the folder named build_folder to the root
