@@ -1,28 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="$(ProjectDir)..\c\enc\backward_references.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\backward_references_hq.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\bit_cost.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\block_splitter.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\brotli_bit_stream.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\cluster.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\compress_fragment.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\compress_fragment_two_pass.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\dictionary_hash.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\encode.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\encoder_dict.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\entropy_encode.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\histogram.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\literal_cost.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\memory.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\metablock.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\static_dict.c" />
-    <ClCompile Include="$(ProjectDir)..\c\enc\utf8_util.c" />
+    <ClCompile Include="..\c\enc\fast_log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\backward_references.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\backward_references_hq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\bit_cost.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\block_splitter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\brotli_bit_stream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\cluster.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\compress_fragment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\compress_fragment_two_pass.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\dictionary_hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\encoder_dict.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\entropy_encode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\histogram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\literal_cost.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\metablock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\static_dict.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)..\c\enc\utf8_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c\enc\command.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{773239B5-63A5-32CA-8E1F-B5551A1EC692}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{044bb0b4-bdb2-41e7-b3b1-416aefcafb56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\c\enc\fast_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c\enc\command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

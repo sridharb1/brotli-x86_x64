@@ -23,7 +23,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{39ABFC9D-42B2-3E32-866B-EC2B980BF85C}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>brotlicommon-static</ProjectName>
@@ -87,6 +87,7 @@
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;BROTLI_HAVE_LOG2=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BROTLI_HAVE_LOG2=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -117,6 +118,7 @@
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;BROTLI_HAVE_LOG2=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BROTLI_HAVE_LOG2=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -147,6 +149,7 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BROTLI_HAVE_LOG2=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BROTLI_HAVE_LOG2=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -177,6 +180,7 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BROTLI_HAVE_LOG2=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BROTLI_HAVE_LOG2=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -195,6 +199,17 @@
   <ItemGroup>
     <ClCompile Include="$(ProjectDir)..\c\common\dictionary.c" />
     <ClCompile Include="$(ProjectDir)..\c\common\transform.c" />
+    <ClCompile Include="..\c\common\constants.c" />
+    <ClCompile Include="..\c\common\context.c" />
+    <ClCompile Include="..\c\common\platform.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\c\common\constants.h" />
+    <ClInclude Include="..\c\common\context.h" />
+    <ClInclude Include="..\c\common\dictionary.h" />
+    <ClInclude Include="..\c\common\platform.h" />
+    <ClInclude Include="..\c\common\transform.h" />
+    <ClInclude Include="..\c\common\version.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

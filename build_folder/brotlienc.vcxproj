@@ -23,7 +23,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F83B2467-2B65-3B88-9797-91501CEA1E21}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>brotlienc</ProjectName>
@@ -255,12 +255,18 @@
     <ClCompile Include="$(ProjectDir)..\c\enc\metablock.c" />
     <ClCompile Include="$(ProjectDir)..\c\enc\static_dict.c" />
     <ClCompile Include="$(ProjectDir)..\c\enc\utf8_util.c" />
+    <ClCompile Include="..\c\enc\command.c" />
+    <ClCompile Include="..\c\enc\fast_log.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(ProjectDir)brotlicommon.vcxproj">
       <Project>{5DDF924F-5850-399E-89E1-FE9C5ADF6B60}</Project>
       <Name>brotlicommon</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\c\enc\command.h" />
+    <ClInclude Include="..\c\enc\fast_log.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

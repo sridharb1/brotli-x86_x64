@@ -23,7 +23,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5DDF924F-5850-399E-89E1-FE9C5ADF6B60}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>brotlicommon</ProjectName>
@@ -239,6 +239,17 @@
   <ItemGroup>
     <ClCompile Include="$(ProjectDir)..\c\common\dictionary.c" />
     <ClCompile Include="$(ProjectDir)..\c\common\transform.c" />
+    <ClCompile Include="..\c\common\constants.c" />
+    <ClCompile Include="..\c\common\context.c" />
+    <ClCompile Include="..\c\common\platform.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\c\common\constants.h" />
+    <ClInclude Include="..\c\common\context.h" />
+    <ClInclude Include="..\c\common\dictionary.h" />
+    <ClInclude Include="..\c\common\platform.h" />
+    <ClInclude Include="..\c\common\transform.h" />
+    <ClInclude Include="..\c\common\version.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
